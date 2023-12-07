@@ -44,6 +44,6 @@ def FullOTA_InstallBegin(info):
   return
 
 def OTA_InstallEnd(info):
-  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  AddImage(info, "IMAGES", "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
